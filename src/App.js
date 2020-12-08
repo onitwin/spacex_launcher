@@ -1,4 +1,5 @@
-import './App.css';
+
+import './stylesheet.scss'
 import Homepage from "./containers/home.js"
 
 const  App=() =>{
