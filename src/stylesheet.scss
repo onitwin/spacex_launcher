@@ -46,3 +46,23 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
+
+.navdiv{
+  width:100vw;
+  height:3vh;
+  border:1px solid blue;
+  display: inline-flex;
+
+}
+
+.navbar-logo{
+  width:15vw;
+  height:2vh;
+}
+
+.navbar-text{
+  margin:0;
+  color:$font-color;
+  font-family:$font-family;
+
+}

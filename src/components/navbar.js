@@ -5,7 +5,12 @@ const Navbar=()=>{
 
 
   return(
-    <nav><img className="navbar-logo" src="spacex-logo.png" alt="spaceX"/></nav>
+    <header>
+    <div className="navdiv">
+    <img className="navbar-logo" src="spacex-logo.png" alt="spaceX"/>
+    <p className="navbar-text">LAUNCHES</p>
+    </div>
+    </header>
 
   )
 }
