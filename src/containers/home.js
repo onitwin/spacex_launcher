@@ -26,10 +26,14 @@ const Homepage=()=>{
   return(
     <Fragment>
     <Navbar/>
-    <p alt="howdy">hello from the homepage</p>
+    <main className="main-container">
+    <div className="image-container">
+    </div>
+
     <List/>
     <Sort/>
     <Filter/>
+    </main>
     </Fragment>
   )
 

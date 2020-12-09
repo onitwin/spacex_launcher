@@ -58,11 +58,26 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
 .navbar-logo{
   width:15vw;
   height:2vh;
+  margin-left:2vw;
 }
 
 .navbar-text{
   margin:0;
   color:$font-color;
   font-family:$font-family;
+}
+
+.main-container{
+  display: inline-flex;
+}
+
+.image-container{
+  background-image: url("./assets/img/launch-home@3x.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width:50vh;
+  height:100vh;
+  resize: both;
+  border: 1px solid blue;
 
 }
