@@ -1,18 +1,38 @@
 import React,{Fragment} from "react";
-import ListItem from "../components/ListItem.js"
+import ListItem from "./ListItem.js"
+// import Button from "./Button"
+
+
+//component to return a list of launches
+const List=({launchData})=>{
+
+  const myList=[...launchData].map((item)=>{
+    return(
+    <p>howdy{item.details}</p>
+  )
+  })
+
+
+
+  console.log(launchData)
 
 
 
 
-const List=()=>{
+
+
 
 
   return(
     <Fragment>
     <div className="listContainer">
+    {myList}
+
+
+
     </div>
 
-    <ListItem/>
+
     </Fragment>
   )
 

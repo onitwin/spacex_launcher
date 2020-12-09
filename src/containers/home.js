@@ -46,8 +46,7 @@ const Homepage=()=>{
     </div>
 
     <List launchData={launchData}/>
-    <Sort/>
-    <Filter/>
+    
     </main>
     </Fragment>
   )
