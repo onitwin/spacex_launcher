@@ -75,9 +75,12 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   background-image: url("./assets/img/launch-home@3x.png");
   background-size:contain;
   background-repeat: no-repeat;
+  background-position: center;
   width:50vh;
   height:100vh;
   resize: both;
-  border: 1px solid blue;
+  border: 1px solid red;
+  justify-content: center;
+  display: block;
 
 }
