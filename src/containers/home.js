@@ -2,6 +2,7 @@ import React,{Fragment,useState,useEffect} from "react";
 import List from "../components/List.js"
 import Sort from "../components/Sort.js"
 import Filter from "../components/Filter.js"
+import Navbar from "../components/Navbar.js"
 
 
 //this will be the main container for all other elements
@@ -24,6 +25,7 @@ const Homepage=()=>{
 
   return(
     <Fragment>
+    <Navbar/>
     <p alt="howdy">hello from the homepage</p>
     <List/>
     <Sort/>
