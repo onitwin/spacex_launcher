@@ -9,7 +9,9 @@ const List=()=>{
 
   return(
     <Fragment>
-    <p>hello from the list page</p>
+    <div className="listContainer">
+    </div>
+
     <ListItem/>
     </Fragment>
   )
