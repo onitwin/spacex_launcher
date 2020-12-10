@@ -8,8 +8,8 @@ const ListItem=({launch})=>{
 
   return(
     <Fragment>
-    <li>
-    <p>hello from the list item page</p>
+    <li className="list-item">
+    <p>hello {launch.mission_name}</p>
     </li>
     </Fragment>
   )

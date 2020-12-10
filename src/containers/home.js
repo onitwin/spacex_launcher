@@ -42,8 +42,8 @@ const Homepage=()=>{
     <Fragment>
     <Navbar/>
     <main className="main-container">
-    <div className="image-container-wrapper">
-    <div className="image-container"></div>
+    <div className="background-image-container-wrapper">
+    <div className="background-image-container"></div>
     </div>
 
     <List launchData={launchData}/>

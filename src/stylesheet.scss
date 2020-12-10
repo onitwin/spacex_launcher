@@ -47,6 +47,7 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
+//style navbar and contents
 .navdiv{
   width:100vw;
   height:3vh;
@@ -67,21 +68,26 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-family:$font-family;
 }
 
+
+//style main container
 .main-container{
   display: inline-flex;
 }
 
-.image-container-wrapper{
+//wrapper to assist alignment and scale of background image
+.background-image-container-wrapper{
   height: 100vh;
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid orange;
 
 
 }
 
-.image-container{
+//background image container
+.background-image-container{
   background-image: url("./assets/img/launch-home@3x.png");
   background-size:contain;
   background-repeat: no-repeat;
@@ -94,9 +100,27 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   display: block;
 }
 
-.listContainer{
-  width:50vh;
+
+//wrapper to assist positioning of list alongside background image
+.list-container-wrapper{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  border: 1px solid purple;
+}
+
+.list-container{
+  width:45vw;
   height:80vh;
   border: 1px solid green;
   overflow: scroll;
+}
+
+.list-item{
+  width:43vw;
+  height:8vh;
+  border-radius: 8px;
+  margin:1vh;
+  box-shadow: 2px 2px 8px silver;
 }
