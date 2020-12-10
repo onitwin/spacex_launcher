@@ -10,7 +10,7 @@ const ListItem=({launch})=>{
     <Fragment>
     <div className="list-item">
     <div className="flight-number-container">
-    <h1 className="flight-number-text">#1</h1>
+    <h1 className="flight-number-text">#{launch.flight_number}</h1>
     </div>
     <div className="mission-name-container">
     <h1 className="mission-name-text">{launch.mission_name}</h1>

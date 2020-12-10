@@ -120,6 +120,7 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   box-shadow: 2px 2px 8px silver;
   display: inline-flex;
   align-items:center;
+  overflow-x: scroll;
 
 }
 
@@ -128,6 +129,9 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   height: 7vh;
   align-content: center;
   justify-content: center;
+  text-align: center;
+
+  // border:1px solid blue;
 }
 
 .flight-number-text{
@@ -135,15 +139,15 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   color:$font-color;
   margin:3px;
   padding:0;
-  border: 1px solid red;
+  // border: 1px solid red;
 
 }
 
 .mission-name-container{
-  width:10vw;
+  width:20vw;
   margin: 0;
   padding: 0;
-  border: 1px solid blue;
+  // border: 1px solid blue;
 }
 
 .mission-name-text{
@@ -152,7 +156,8 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
 }
 
 .date-container{
-  border: 1px solid red;
   align-self: flex-end;
+  text-align: right;
+  width: 17vw;
 
 }
