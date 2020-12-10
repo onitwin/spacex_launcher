@@ -8,7 +8,7 @@ const Options=({year})=>{
 
   return(
     <Fragment>
-  <option>{year}</option>
+  <option >{year}</option>
     </Fragment>
   )
 
