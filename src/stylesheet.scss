@@ -117,10 +117,13 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   overflow: scroll;
 }
 
+
+//list item  and contents styling
 .list-item{
   width:43vw;
   height:8vh;
   border-radius: 8px;
+
   margin:1vh;
-  box-shadow: 2px 2px 8px silver;
+  box-shadow: 2px 2px 10px silver;
 }
