@@ -8,7 +8,7 @@ const List=({launchData})=>{
 
   const myList=[...launchData].map((item)=>{
     return(
-    <p>howdy{item.details}</p>
+    <ListItem item/>
   )
   })
 
