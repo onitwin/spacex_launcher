@@ -8,7 +8,7 @@ const Navbar=()=>{
     <header>
     <div className="navdiv">
     <img className="navbar-logo" src="spacex-logo.png" alt="spaceX"/>
-    <p className="navbar-text">LAUNCHES</p>
+    <h3 className="navbar-text">LAUNCHES</h3>
     </div>
     </header>
 
