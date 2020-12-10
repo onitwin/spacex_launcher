@@ -16,7 +16,8 @@ const ListItem=({launch})=>{
     <h1 className="mission-name-text">{launch.mission_name}</h1>
     </div>
     <div className="date-container">
-    <p>date goes here</p>
+    <p className="flight-date">Date Placeholder</p>
+    <h3 className="flight-name">{launch.rocket.rocket_name}</h3>
 
     </div>
     </div>
