@@ -14,14 +14,6 @@ const List=({launchData})=>{
 
 
 
-  console.log(launchData)
-
-
-
-
-
-
-
 
   return(
     <Fragment>
