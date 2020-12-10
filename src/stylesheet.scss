@@ -53,6 +53,7 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   height:4vh;
   display: inline-flex;
   align-items: center;
+  align-items: baseline;
 
 
 }
@@ -120,7 +121,6 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   box-shadow: 2px 2px 8px silver;
   display: inline-flex;
   align-items:center;
-  overflow-x: scroll;
 
 }
 
@@ -144,9 +144,10 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
 }
 
 .mission-name-container{
-  width:20vw;
+  width:23vw;
   margin: 0;
   padding: 0;
+  overflow-x: scroll;
   // border: 1px solid blue;
 }
 
@@ -159,5 +160,6 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   align-self: flex-end;
   text-align: right;
   width: 17vw;
+  // border: 1px solid red;
 
 }
