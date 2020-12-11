@@ -9,6 +9,10 @@ const Filter=({launchData,filterFunction})=>{
   //state to hold selcted result from options
   const [selectedYear,setSelectedYear]=useState("2001")
 
+  function handleChange(event){
+    setSelectedYear(event.target.value)
+  }
+
 
 
   //empty array to push each unique year identified
@@ -31,8 +35,8 @@ const Filter=({launchData,filterFunction})=>{
 
   return(
     <Fragment>
-    <select onChange={()=>filterFunction(selectedYear)} className="year-filter-btn">
-    <option >Filter by year</option>
+    <select onChange={handleChange} className="year-filter-btn">
+    <option >Filter by Year</option>
     {years}
     </select>
     </Fragment>
@@ -40,3 +44,5 @@ const Filter=({launchData,filterFunction})=>{
 
 }
 export default Filter
+
+// <select onChange={()=>filterFunction(selectedYear)} className="year-filter-btn">
