@@ -43,16 +43,15 @@ const Homepage=()=>{
   return(
     <Fragment>
     <Navbar/>
+    <div className="filtercontainer">
+    </div>
     <main className="main-container">
-    <Filter launchData={launchData}/>
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
 
     <List launchData={launchData}/>
     </main>
-    <div className="btn-test" onClick={()=>getYears(launchData)}></div>
-
     </Fragment>
   )
 

@@ -1,5 +1,6 @@
 import React,{Fragment} from "react";
 import ListItem from "./ListItem.js"
+import Filter from "./Filter.js";
 // import Button from "./Button"
 
 
@@ -18,6 +19,10 @@ const List=({launchData})=>{
   return(
     <Fragment>
     <div className="list-container-wrapper">
+    <div className="btn-container">
+    <Filter launchData={launchData}/>
+    </div>
+
     <div className="list-container">
     {myList}
     </div>
