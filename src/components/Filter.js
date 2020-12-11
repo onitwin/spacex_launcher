@@ -1,13 +1,14 @@
-import React ,{useState,Fragment} from "react";
-import getYears from "../helpers/getYears"
+import React ,{Fragment,useState} from "react";
 import Options from "./Options.js"
 
 
 
 
-const Filter=({launchData})=>{
+const Filter=({launchData,filterFunction})=>{
 
   const allYears=[]
+
+  const [selectedYear,setSelectedYear]=useState("")
 
   const years=[...launchData].map((year)=>{
     if(!allYears.includes(year.launch_year)){
@@ -27,9 +28,8 @@ const Filter=({launchData})=>{
   return(
     <Fragment>
     <select className="year-filter-btn">
-    <option>Filter by year</option>
+    <option >Filter by year</option>
     {years}
-
     </select>
     </Fragment>
   )

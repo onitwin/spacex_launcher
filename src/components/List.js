@@ -1,6 +1,5 @@
 import React,{Fragment} from "react";
 import ListItem from "./ListItem.js"
-import Filter from "./Filter.js";
 // import Button from "./Button"
 
 

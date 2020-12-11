@@ -2,13 +2,13 @@ import React,{Fragment} from "react";
 
 
 
-
+//returns a single year for use with filter
 const Options=({year})=>{
 
 
   return(
     <Fragment>
-  <option >{year}</option>
+  <option value={year}>{year}</option>
     </Fragment>
   )
 

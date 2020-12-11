@@ -1,7 +1,5 @@
 import React,{Fragment,useState,useEffect} from "react";
-import List from "../components/List.js"
-import Sort from "../components/Sort.js"
-import Filter from "../components/Filter.js"
+
 import Navbar from "../components/Navbar.js"
 import ListContainer from "./ListContainer.js"
 
@@ -37,7 +35,7 @@ const Homepage=()=>{
   // }
 
   //function to put result from filter year into year and
-  function filterData(){
+  function filterData(input){
     console.log("filter data has triggered")
   }
 
