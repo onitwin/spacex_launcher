@@ -3,17 +3,20 @@ import List from "../components/List.js"
 import Sort from "../components/Sort.js"
 import Filter from "../components/Filter.js"
 import Navbar from "../components/Navbar.js"
-import getYears from "../helpers/getYears"
+import ListContainer from "./ListContainer.js"
 
 
 //this will be the main container for all other elements
 const Homepage=()=>{
   //state to hold fetched data
   const [launchData,setLaunchData]=useState("");
-  const [years,setYears]=useState("");
 
-  //state to hold sorted/filtered data
-  // const [sortedData,setSortedData]=useState("");
+
+  //state to hold filtered/sorted data
+  const [sortedData,setSortedData]=useState("")
+
+  //state to hold selected year from Filter
+  const [year,setYear]=useState("");
 
   //function to obtain launch data from spaceX Api
   const fetchLaunchData=async() =>{
@@ -32,10 +35,11 @@ const Homepage=()=>{
   // function sortData(){
   //   console.log("sort data has triggered")
   // }
-  //
-  // function filterData(){
-  //   console.log("filter data has triggered")
-  // }
+
+  //function to put result from filter year into year and
+  function filterData(){
+    console.log("filter data has triggered")
+  }
 
 
 
@@ -43,14 +47,11 @@ const Homepage=()=>{
   return(
     <Fragment>
     <Navbar/>
-    <div className="filtercontainer">
-    </div>
     <main className="main-container">
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-
-    <List launchData={launchData}/>
+    <ListContainer launchData={launchData} filterFunction={filterData}/>
     </main>
     </Fragment>
   )

@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React ,{useState,Fragment} from "react";
 import getYears from "../helpers/getYears"
 import Options from "./Options.js"
 
@@ -25,13 +25,13 @@ const Filter=({launchData})=>{
 
 
   return(
-    <div>
+    <Fragment>
     <select className="year-filter-btn">
     <option>Filter by year</option>
     {years}
 
     </select>
-    </div>
+    </Fragment>
   )
 
 }

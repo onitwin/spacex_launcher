@@ -19,16 +19,10 @@ const List=({launchData})=>{
   return(
     <Fragment>
     <div className="list-container-wrapper">
-    <div className="btn-container">
-    <Filter launchData={launchData}/>
-    </div>
-
     <div className="list-container">
     {myList}
     </div>
     </div>
-
-
     </Fragment>
   )
 

@@ -107,12 +107,15 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   align-items: center;
 }
 
+
+//styling for list
 .list-container{
   width:45vw;
   height:80vh;
   overflow: scroll;
 }
 
+//styling for list contents
 .list-item{
   width:43vw;
   height:8vh;
@@ -172,13 +175,6 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-weight:bold;
 }
 
-
-
-.filtercontainer{
-}
-
-
-
 .year-filter-btn{
   position:relative;
   width:8rem;
@@ -186,9 +182,11 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   background-color: $primary-blue;
   color: white;
   border-radius: 0;
+  border:none;
 }
 
 .btn-container{
-  width:43vw;
+  width:44vw;
+  height:2rem;
   text-align: right;
 }

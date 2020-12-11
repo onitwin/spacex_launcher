@@ -2,7 +2,7 @@ import React,{Fragment} from "react";
 
 
 
-
+//component to return individal launch item for display within list component
 const ListItem=({launch})=>{
 
 
@@ -18,7 +18,6 @@ const ListItem=({launch})=>{
     <div className="date-container">
     <p className="flight-date">Date Placeholder</p>
     <h3 className="flight-name">{launch.rocket.rocket_name}</h3>
-
     </div>
     </div>
     </Fragment>
