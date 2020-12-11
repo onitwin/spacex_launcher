@@ -3,7 +3,7 @@ import React,{Fragment} from "react";
 
 
 //returns a single year for use with filter
-const Options=({year,filterFunction})=>{
+const Options=({year})=>{
 
 
   return(

@@ -1,4 +1,4 @@
-import React ,{Fragment,useState} from "react";
+import React ,{Fragment,useState,useEffect} from "react";
 import Options from "./Options.js"
 
 
@@ -6,11 +6,15 @@ import Options from "./Options.js"
 
 const Filter=({launchData,filterFunction})=>{
 
-  //state to hold selcted result from options
-  const [selectedYear,setSelectedYear]=useState("2001")
 
+
+  //state to hold selcted result from options
+  const [selectedYear,setSelectedYear]=useState("")
+
+  //currently submitting filter to quick-add async
   function handleChange(event){
     setSelectedYear(event.target.value)
+    filterFunction(selectedYear)
   }
 
 
@@ -22,7 +26,7 @@ const Filter=({launchData,filterFunction})=>{
     if(!allYears.includes(year.launch_year)){
       allYears.push(year.launch_year)
       return(
-      <Options filterFunction={filterFunction}year={year.launch_year}/>
+      <Options year={year.launch_year}/>
     )
     }
     else{
