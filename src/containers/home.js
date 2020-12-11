@@ -23,7 +23,6 @@ const Homepage=()=>{
     .then(data=>setLaunchData(data))
   }
 
-
   //useEffect to call fetchLaunchData function onMount
   useEffect(()=>{
     fetchLaunchData()
@@ -36,7 +35,7 @@ const Homepage=()=>{
 
   //function to put result from filter year into year and
   function filterData(input){
-    console.log("filter data has triggered")
+    setYear(input)
   }
 
 

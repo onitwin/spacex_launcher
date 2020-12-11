@@ -6,15 +6,19 @@ import Options from "./Options.js"
 
 const Filter=({launchData,filterFunction})=>{
 
-  const allYears=[]
+  //state to hold selcted result from options
+  const [selectedYear,setSelectedYear]=useState("2001")
 
-  const [selectedYear,setSelectedYear]=useState("")
+
+
+  //empty array to push each unique year identified
+  const allYears=[]
 
   const years=[...launchData].map((year)=>{
     if(!allYears.includes(year.launch_year)){
       allYears.push(year.launch_year)
       return(
-      <Options year={year.launch_year}/>
+      <Options filterFunction={filterFunction}year={year.launch_year}/>
     )
     }
     else{
@@ -27,7 +31,7 @@ const Filter=({launchData,filterFunction})=>{
 
   return(
     <Fragment>
-    <select className="year-filter-btn">
+    <select onChange={()=>filterFunction(selectedYear)} className="year-filter-btn">
     <option >Filter by year</option>
     {years}
     </select>
