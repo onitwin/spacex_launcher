@@ -28,6 +28,10 @@ const Homepage=()=>{
     fetchLaunchData()
   },[])
 
+  useEffect(()=>{
+    filterYears(year)
+  },[year])
+
   //placeholders for data update functions
   // function sortData(){
   //   console.log("sort data has triggered")
