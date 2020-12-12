@@ -4,7 +4,7 @@ import Filter from "../components/Filter.js"
 
 
 
-const ListContainer=({launchData,getYear})=>{
+const ListContainer=({launchData,getYear,sortedData})=>{
 
 
 
@@ -17,7 +17,7 @@ const ListContainer=({launchData,getYear})=>{
     <Fragment>
     <div className="btn-container">
     <Filter launchData={launchData} getYear={getYear}/>
-    <List launchData={launchData}/>
+    <List launchData={launchData} sortedData={sortedData}/>
     </div>
     </Fragment>
 

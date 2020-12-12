@@ -53,7 +53,7 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData}  getYear={getYear}/>
+    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear}/>
     </main>
     <btn onClick={()=>filterYears(year)}>test function</btn>
     </Fragment>
