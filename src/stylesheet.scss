@@ -53,9 +53,13 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   height:4vh;
   display: inline-flex;
   align-items: center;
+  margin-bottom: 1vh;
+}
+
+.logo-group{
+  display: inline-flex;
+  align-items: center;
   align-items: baseline;
-
-
 }
 
 .navbar-logo{
@@ -70,6 +74,40 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-family:$font-family;
 }
 
+.navbar-btn-container{
+width:100vw;
+display:inline-flex;
+justify-content: flex-end;
+}
+
+.default-btn{
+  width:8rem;
+  height:2rem;
+  background-color: $primary-blue;
+  color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border:none;
+  // text-align:center;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.default-btn-text{
+  margin:0;
+  padding:0;
+  font-family: $font-family;
+  color: white;
+}
+
+.refresh-image{
+  background-image: url("./assets/icon/refresh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:4rem;
+  height:4rem;
+}
 
 //style main container
 .main-container{
@@ -127,7 +165,7 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
 }
 
 .flight-number-container{
-  width:6vw;
+  width:10vw;
   height: 7vh;
   align-content: center;
   justify-content: center;
@@ -139,15 +177,21 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   color:$font-color;
   margin:3px;
   padding:0;
+  overflow-x: scroll;
 
 }
 
 .mission-name-container{
-  width:23vw;
+  width:22vw;
+  height:8vh;
   margin: 0;
   padding: 0;
   overflow-x: scroll;
-  text-align: left;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+
 }
 
 .mission-name-text{
@@ -177,13 +221,13 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-weight:bold;
 }
 
+//filter btn
 .year-filter-btn{
   position:relative;
   width:8rem;
   height:2rem;
   background-color: $primary-blue;
   color: white;
-  border-radius: 0;
   border:none;
 }
 
