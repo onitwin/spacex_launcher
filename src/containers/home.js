@@ -45,10 +45,10 @@ const Homepage=()=>{
     year?setSortedData(launchData.filter((launch)=>launch.launch_year ===data)):setSortedData(launchData)
   }
 
-  //placeholders for data update functions
-  // function sortData(){
-  //   console.log("sort data has triggered")
-  // }
+  // placeholders for data update functions
+  function sortData(){
+    console.log("sort data has triggered")
+  }
 
   function refreshData(){
     fetchLaunchData()
@@ -66,7 +66,7 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear}/>
+    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={sortData}/>
     </main>
     </Fragment>
   )

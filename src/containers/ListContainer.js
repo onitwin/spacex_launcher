@@ -1,11 +1,11 @@
 import React ,{Fragment} from 'react'
 import List from "../components/List.js";
 import Filter from "../components/Filter.js"
+import Button from "../components/Button.js"
 
 
 
-const ListContainer=({launchData,getYear,sortedData})=>{
-
+const ListContainer=({launchData,getYear,sortedData,sort})=>{
 
 
 
@@ -17,6 +17,7 @@ const ListContainer=({launchData,getYear,sortedData})=>{
     <Fragment>
     <div className="btn-container">
     <Filter launchData={launchData} getYear={getYear}/>
+    <Button text={"hello"} asset="sort-icons" func={sort}/>
     <List launchData={launchData} sortedData={sortedData}/>
     </div>
     </Fragment>
