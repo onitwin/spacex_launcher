@@ -4,11 +4,11 @@ import Options from "./Options.js"
 
 
 
-const Filter=({launchData,filterFunction})=>{
+const Filter=({launchData,getYear})=>{
 
 
 
-  //state to hold selcted result from options
+  //state to hold selected result from options- default empty string
   const [selectedYear,setSelectedYear]=useState("")
 
   //currently submitting filter to quick-add async
@@ -16,8 +16,9 @@ const Filter=({launchData,filterFunction})=>{
     setSelectedYear(event.target.value)
   }
 
+  //looks for changes to 'selectedYear' state and passes to home component
   useEffect(()=>{
-    filterFunction(selectedYear)
+    getYear(selectedYear)
   },[selectedYear])
 
 
@@ -25,6 +26,7 @@ const Filter=({launchData,filterFunction})=>{
   //empty array to push each unique year identified
   const allYears=[]
 
+  //map over launch data and push unique values to 'allYears' for comparison to generate unique <options>
   const years=[...launchData].map((year)=>{
     if(!allYears.includes(year.launch_year)){
       allYears.push(year.launch_year)

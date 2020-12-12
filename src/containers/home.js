@@ -33,9 +33,14 @@ const Homepage=()=>{
   //   console.log("sort data has triggered")
   // }
 
-  //function to put result from filter year into year and
-  function filterData(input){
+  //function to get year  filter component and set state in home component
+  function getYear(input){
     setYear(input)
+  }
+
+  //function sets sortedData to include only launches in year matching year variable, or all years if no variable
+  function filterYears(data){
+    year?setSortedData(launchData.filter((launch)=>launch.launch_year ===data)):setSortedData(launchData)
   }
 
 
@@ -48,10 +53,14 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData} filterFunction={filterData}/>
+    <ListContainer launchData={launchData}  getYear={getYear}/>
     </main>
+    <btn onClick={()=>filterYears(year)}>test function</btn>
     </Fragment>
   )
 
 }
 export default Homepage
+
+
+  // .then(setSortedData(launchData))
