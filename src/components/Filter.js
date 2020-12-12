@@ -14,8 +14,11 @@ const Filter=({launchData,filterFunction})=>{
   //currently submitting filter to quick-add async
   function handleChange(event){
     setSelectedYear(event.target.value)
-    filterFunction(selectedYear)
   }
+
+  useEffect(()=>{
+    filterFunction(selectedYear)
+  },[selectedYear])
 
 
 
@@ -40,7 +43,8 @@ const Filter=({launchData,filterFunction})=>{
   return(
     <Fragment>
     <select onChange={handleChange} className="year-filter-btn">
-    <option >Filter by Year</option>
+    <option value="">Filter by Year</option>
+    <option value="" >All Years</option>
     {years}
     </select>
     </Fragment>
