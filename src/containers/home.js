@@ -43,16 +43,34 @@ const Homepage=()=>{
   //function sets sortedData to include only launches in year matching year variable, or all years if no variable
   function filterYears(data){
     year?setSortedData(launchData.filter((launch)=>launch.launch_year ===data)):setSortedData(launchData)
+    console.log(`filter data has triggered for year ${data}`)
   }
+
+
 
   // placeholders for data update functions
-  function sortData(){
+  function reOrderData(data){
+    console.log(`the data is ${data}`)
+    console.log(`the data length is ${data.length}`)
+    for (let i=0;i<data.length;i++){
+      for (let j=0;j<data.length;j++){
+        if(data[j]<data[j+1]){
+          let temp=data[j]
+          data[j]=data[j+1]
+          data[j+1]=temp
+        }
+      }
+    }
     console.log("sort data has triggered")
+    console.log(data)
+    return data
   }
 
+  //actions fresh fetch request- subsequent setting of 'year' to '""' triggers re-render via useEffect(filterYears)
   function refreshData(){
     fetchLaunchData()
     .then(setYear(""))
+    .then(console.log("refreshData has triggered"))
   }
 
 
@@ -66,7 +84,7 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={sortData}/>
+    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={reOrderData}/>
     </main>
     </Fragment>
   )

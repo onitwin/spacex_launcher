@@ -1,7 +1,6 @@
 import React,{Fragment} from "react";
 import ListItem from "./ListItem.js"
-// import Button from "./Button"
-
+import { v4 as uuidv4 } from 'uuid'; //generate unique ID for use as keys
 
 //component to return a list of launches
 const List=({launchData,sortedData})=>{
@@ -10,11 +9,9 @@ const List=({launchData,sortedData})=>{
 
   const myList=[...flightData].map((launch)=>{
     return(
-    <ListItem launch={launch}/>
+    <ListItem key={uuidv4()} launch={launch}/>
   )
   })
-
-
 
 
   return(

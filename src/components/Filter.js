@@ -1,5 +1,6 @@
 import React ,{Fragment,useState,useEffect} from "react";
 import Options from "./Options.js"
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -31,7 +32,7 @@ const Filter=({launchData,getYear})=>{
     if(!allYears.includes(year.launch_year)){
       allYears.push(year.launch_year)
       return(
-      <Options year={year.launch_year}/>
+      <Options key={uuidv4()} year={year.launch_year}/>
     )
     }
     else{

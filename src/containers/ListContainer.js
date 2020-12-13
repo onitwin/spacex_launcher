@@ -17,7 +17,7 @@ const ListContainer=({launchData,getYear,sortedData,sort})=>{
     <Fragment>
     <div className="btn-container">
     <Filter launchData={launchData} getYear={getYear}/>
-    <Button text={"hello"} asset="sort-icons" func={sort}/>
+    <Button text={"hello"} asset="sort-icons" func={()=>sort([1,2,3,4,5])}/>
     <List launchData={launchData} sortedData={sortedData}/>
     </div>
     </Fragment>
