@@ -46,31 +46,24 @@ const Homepage=()=>{
     console.log(`filter data has triggered for year ${data}`)
   }
 
-
-
-  // placeholders for data update functions
-  function reOrderData(data){
-    console.log(`the data is ${data}`)
-    console.log(`the data length is ${data.length}`)
-    for (let i=0;i<data.length;i++){
-      for (let j=0;j<data.length;j++){
-        if(data[j]<data[j+1]){
-          let temp=data[j]
-          data[j]=data[j+1]
-          data[j+1]=temp
-        }
-      }
-    }
-    console.log("sort data has triggered")
-    console.log(data)
-    return data
-  }
-
   //actions fresh fetch request- subsequent setting of 'year' to '""' triggers re-render via useEffect(filterYears)
   function refreshData(){
     fetchLaunchData()
     .then(setYear(""))
     .then(console.log("refreshData has triggered"))
+  }
+
+
+  function invertDataOrder(){
+    let tempData=[]
+    let arrayTemplate
+    sortedData?arrayTemplate=sortedData:arrayTemplate=launchData
+    console.log(arrayTemplate)
+    let len=arrayTemplate.length
+    for (let i=0;i<len;i++){
+    tempData.push(arrayTemplate.pop())
+  }
+    setSortedData(tempData)
   }
 
 
@@ -84,7 +77,7 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={reOrderData}/>
+    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={invertDataOrder}/>
     </main>
     </Fragment>
   )
