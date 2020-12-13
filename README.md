@@ -1,5 +1,10 @@
 ![Imgur](https://i.imgur.com/qPJ9P44.jpg)
-#Image of complete website
+# Image of complete website
+![Imgur](https://i.imgur.com/LME2Gmq.jpg)
+# Initial wirefro following brief
+![Imgur](https://i.imgur.com/rqrrXbs.jpg)
+#concept of file relationshop
+
 
 
 
