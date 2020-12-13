@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+![Imgur](https://i.imgur.com/qPJ9P44.jpg)
+# Image of complete website
+![Imgur](https://i.imgur.com/LME2Gmq.jpg)
+# Initial wireframe following brief
+![Imgur](https://i.imgur.com/rqrrXbs.jpg)
+# Concept of file relationshop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Brief was to create a webapp that could pull information from the SpaceX API and display it, as well as filter, reorder and refresh the information
 
 ## Available Scripts
 
