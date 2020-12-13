@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+![Imgur](https://i.imgur.com/qPJ9P44.jpg)
+#Image of complete website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
