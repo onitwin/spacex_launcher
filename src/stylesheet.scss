@@ -163,13 +163,14 @@ justify-content: flex-end;
   margin:1vh;
   box-shadow: 2px 2px 8px silver;
   display: inline-flex;
-  align-items:center;
+  align-items:baseline;
+  justify-content: center;
   overflow: scroll;
 }
 
 .flight-number-container{
-  width:10vw;
-  height: 7vh;
+  width:9vw;
+  height: 6vh;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -208,8 +209,7 @@ justify-content: flex-end;
   text-align: right;
   width: 17vw;
   display: block;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow:scroll;
   white-space: nowrap;
   align-items: center;
 }

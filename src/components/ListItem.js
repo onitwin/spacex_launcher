@@ -45,7 +45,7 @@ const ListItem=({launch})=>{
 
 
   return(
-    <div className="list-item">
+    <article className="list-item">
     <div className="flight-number-container">
     <h1 className="flight-number-text">#{launch.flight_number}</h1>
     </div>
@@ -57,7 +57,7 @@ const ListItem=({launch})=>{
     <h3 className="flight-name">{launch.rocket.rocket_name}</h3>
     </div>
 
-    </div>
+    </article>
   )
 
 }
