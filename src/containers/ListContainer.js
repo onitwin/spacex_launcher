@@ -5,7 +5,7 @@ import Button from "../components/Button.js"
 
 
 
-const ListContainer=({launchData,getYear,sortedData,sort})=>{
+const ListContainer=({launchData,getYear,sortedData,sort,ascending})=>{
 
 
 
@@ -14,13 +14,16 @@ const ListContainer=({launchData,getYear,sortedData,sort})=>{
 
 
   return(
-    <Fragment>
+
+    <div className="list-container-div">
     <div className="btn-container">
     <Filter launchData={launchData} getYear={getYear}/>
-    <Button text={"hello"} asset="sort-icons" func={()=>sort([1,2,3,4,5])}/>
+    {ascending?<Button text={"Sort Decending"} asset="sort-icons" func={sort} clName={"default-btn sort"}/>:<Button text={"Sort Ascending"} asset="sort-icons" func={sort} clName={"default-btn sort"}/>}
+    </div>
     <List launchData={launchData} sortedData={sortedData}/>
     </div>
-    </Fragment>
+
+
 
 
   )

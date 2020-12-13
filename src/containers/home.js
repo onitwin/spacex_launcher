@@ -16,6 +16,8 @@ const Homepage=()=>{
   //state to hold selected year from Filter
   const [year,setYear]=useState("");
 
+  const[ascending,setAscending]=useState(true)
+
   //function to obtain launch data from spaceX Api
   const fetchLaunchData=async() =>{
     fetch("https://api.spacexdata.com/v3/launches")
@@ -64,6 +66,7 @@ const Homepage=()=>{
     tempData.push(arrayTemplate.pop())
   }
     setSortedData(tempData)
+    setAscending(!ascending)
   }
 
 
@@ -77,7 +80,7 @@ const Homepage=()=>{
     <div className="background-image-container-wrapper">
     <div className="background-image-container"></div>
     </div>
-    <ListContainer launchData={launchData}  sortedData={sortedData} getYear={getYear} sort={invertDataOrder}/>
+    <ListContainer launchData={launchData}  ascending={ascending} sortedData={sortedData} getYear={getYear} sort={invertDataOrder}/>
     </main>
     </Fragment>
   )

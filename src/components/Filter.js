@@ -46,7 +46,7 @@ const Filter=({launchData,getYear})=>{
   return(
     <Fragment>
     <select onChange={handleChange} className="year-filter-btn">
-    <option value="">Filter by Year</option>
+    <option className="filter-btn-options" value="">Filter by Year</option>
     <option value="" >All Years</option>
     {years}
     </select>

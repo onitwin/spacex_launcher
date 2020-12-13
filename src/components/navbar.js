@@ -13,7 +13,7 @@ const Navbar=({refresh,asset})=>{
     <h3 className="navbar-text">LAUNCHES</h3>
     </div>
    <div className="navbar-btn-container">
-    <Button text="Refresh" func={refresh} asset={asset}/>
+    <Button text="Reload Data" func={refresh} asset={asset} clName={"default-btn"}/>
     </div>
     </div>
     </header>
