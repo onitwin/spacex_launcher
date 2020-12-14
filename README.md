@@ -7,6 +7,14 @@
 
 ### Brief was to create a webapp that could pull information from the SpaceX API and display it, as well as filter, reorder and refresh the information
 
+
+### `Future Development Routes`
+- Update SASS to be more responsive to display size
+- Make stronger use of A11y practices
+- Incorporate tests
+- Have each list item generate its own page or modal with extra information such as images and videos
+
+
 ## Available Scripts
 
 In the project directory, you can run:
